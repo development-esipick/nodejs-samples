@@ -9,6 +9,13 @@ const {GraphQLJSON, GraphQLJSONObject} = require('graphql-type-json');
 
 const userResolvers = {
     Query: {
+        /**
+         * Get User List
+         * @param {*} root 
+         * @param {*} args 
+         * @param {*} context 
+         * @returns (string)JSON
+         */
         async getUserList(root, args, context) {
             const {pagination, sort, orderBy, search} = args;
             await authValidations.ensureThatUserIsLogged(context);
