@@ -2,20 +2,20 @@
 
 A collection of Nodejs based sample code.
 
-## Installation
+## Directory structure
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+This project is organized as follows for graphql backend application:
 
-```bash
-pip install foobar
+
+- directory [**`apollo-grapql-sample\migrations`**](apollo-grapql-sample/migrations/) contains sample migrations.
+- directory [**`apollo-grapql-sample\seeders`**](apollo-grapql-sample/seeders/) contains sample seeders.
+- file [**`apollo-grapql-sample\server.js`**](apollo-grapql-sample/server.js) contains creation of apollo server and loading resolvers.
+- directory [**`apollo-grapql-sample\src\constants`**](apollo-grapql-sample/src/constants/) contains sample contants for application.
+- file [**`apollo-grapql-sample\src\helpers\validations.js`**](apollo-grapql-sample/src/helpers/validations.js) contains sample migrations.
+- directory [**`apollo-grapql-sample\src\models`**](apollo-grapql-sample/src/models) contains sample sequelize models.
+- directory [**`apollo-grapql-sample\src\resolvers`**](apollo-grapql-sample/src/resolvers/) contains sample modular based resolvers.
+- directory [**`apollo-grapql-sample\auth`**](apollo-grapql-sample/auth/) contains sample auth validation middlewares, context update & jwt methods.
+
 ```
-
-```
-
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
-
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
